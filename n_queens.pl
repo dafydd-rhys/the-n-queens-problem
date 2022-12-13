@@ -26,8 +26,8 @@ solution([Q|QS]) :-
 %recursively check if queen placement is valid
 valid(_, []).
 valid([PX|PY], [[TX|TY]|QS]) :-
-    convert(PX, PXV),				%returns queen x value
-    convert(TX, TXV),				%returns others queens tiles x value
+   	convert(PX, PXV),			%returns queen x value
+    	convert(TX, TXV),			%returns others queens tiles x value
 	PX =\= TX,
 	PY =\= TY,
 	TXV - PXV =\= TY - PY,
@@ -36,7 +36,7 @@ valid([PX|PY], [[TX|TY]|QS]) :-
 
 %converts row regex to its row X value
 convert(L, V) :- 				%letter -> value
-    ( L =:= "a" ->   V is 1;
+    ( 	L =:= "a" ->   V is 1;
     L =:= "b" ->   V is 2;
     L =:= "c" ->   V is 3;
     L =:= "d" ->   V is 4;
