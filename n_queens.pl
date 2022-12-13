@@ -8,6 +8,8 @@ tile(["a",3]). tile(["b",3]). tile(["c",3]). tile(["d",3]). tile(["e",3]). tile(
 tile(["a",2]). tile(["b",2]). tile(["c",2]). tile(["d",2]). tile(["e",2]). tile(["f",2]). tile(["g",2]). tile(["h",2]).
 tile(["a",1]). tile(["b",1]). tile(["c",1]). tile(["d",1]). tile(["e",1]). tile(["f",1]). tile(["g",1]). tile(["h",1]).
 
+%example query ?-n_queens(8) or ?-solution[Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8]
+
 %enter wanted number of placed queens
 n_queens(X) :-
     length(L, X), 				%creates list of X variables
