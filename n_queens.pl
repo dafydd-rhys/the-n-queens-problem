@@ -26,8 +26,8 @@ solution([Q|QS]) :-
 %recursively check if queen placement is valid
 valid(_, []).
 valid([PX|PY], [[TX|TY]|QS]) :-
-    convert(PX, PXV),			%returns queen x value
-    convert(TX, TXV),			%returns others queens tiles x value
+    convert(PX, PXV),				%returns queen x value
+    convert(TX, TXV),				%returns others queens tiles x value
 	PX =\= TX,
 	PY =\= TY,
 	TXV - PXV =\= TY - PY,
